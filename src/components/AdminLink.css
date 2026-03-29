@@ -1,0 +1,29 @@
+.admin-corner-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: var(--primary-gold);
+  color: var(--text-dark);
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  z-index: 9999;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  letter-spacing: 0.5px;
+  border: 2px solid transparent;
+}
+
+.admin-corner-btn:hover {
+  transform: translateY(-3px);
+  background: var(--text-dark);
+  color: var(--primary-gold);
+  border-color: var(--primary-gold);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}

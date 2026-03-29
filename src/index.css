@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Outfit:wght@300;400;500;600&display=swap');
+
+:root {
+  /* Dynamic Indian aesthetic palette */
+  --primary-red: #c41e3a;      /* Crimson/Sindoori Red */
+  --primary-gold: #d4af37;     /* Rich Gold */
+  --secondary-gold: #f3e5ab;   /* Soft Gold / Vanilla */
+  --marigold: #ff9933;         /* Marigold Orange */
+  --deep-maroon: #5c001e;      /* Deep Maroon for contrast */
+  
+  --bg-light: #fffaf0;         /* Floral White */
+  --bg-card: #ffffff;
+  --text-dark: #2c1e16;        /* Warm Dark Brown */
+  --text-light: #fefefe;
+  
+  /* Typography */
+  --font-heading: 'Cinzel', serif; /* Regal, traditional font */
+  --font-body: 'Outfit', sans-serif; /* Clean, modern body */
+  
+  /* Layout & Shadows */
+  --shadow-sm: 0 4px 6px rgba(196, 30, 58, 0.05);
+  --shadow-md: 0 10px 15px -3px rgba(196, 30, 58, 0.1), 0 4px 6px -2px rgba(196, 30, 58, 0.05);
+  --shadow-gold: 0 8px 30px rgba(212, 175, 55, 0.2);
+  --radius-md: 12px;
+  --radius-lg: 24px;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--deep-maroon);
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* Base utility classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.text-center { text-align: center; }
+.text-gold { color: var(--primary-gold); }
+.text-red { color: var(--primary-red); }
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-red), var(--deep-maroon));
+  color: var(--text-light);
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 1rem;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+  border: 1px solid rgba(255,255,255,0.1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 20px rgba(196, 30, 58, 0.3);
+  background: linear-gradient(135deg, var(--deep-maroon), var(--primary-red));
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--primary-red);
+  border: 2px solid var(--primary-red);
+  padding: 10px 26px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.btn-outline:hover {
+  background: var(--primary-red);
+  color: white;
+  box-shadow: var(--shadow-md);
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}

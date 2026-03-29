@@ -1,0 +1,129 @@
+.onboarding-listing-section {
+  padding: 80px 0;
+  background-color: var(--bg-light);
+}
+
+.listing-wrapper {
+  display: flex;
+  background: white;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+  border-top: 5px solid var(--primary-gold);
+}
+
+.listing-info {
+  flex: 1;
+  padding: 50px;
+  background: linear-gradient(135deg, var(--deep-maroon) 0%, #3a0012 100%);
+  color: white;
+}
+
+.listing-info .section-title {
+  color: var(--primary-gold);
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.listing-info .section-subtitle {
+  color: rgba(255, 255, 255, 0.9);
+  text-align: left;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+.perks-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.perks-list li {
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--bg-light);
+}
+
+.listing-form-container {
+  flex: 1.2;
+  padding: 50px;
+  background: white;
+}
+
+.listing-form .form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.listing-form .form-group {
+  flex: 1;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.listing-form .form-group:hover,
+.listing-form .form-group:focus-within {
+  background: rgba(212, 175, 55, 0.05);
+  border: 1px solid var(--primary-gold);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.listing-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text-dark);
+}
+
+.listing-form input,
+.listing-form select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  background: #f9f9f9;
+  transition: var(--transition);
+}
+
+.listing-form input:focus,
+.listing-form select:focus {
+  outline: none;
+  border-color: var(--primary-gold);
+  background: white;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+}
+
+.submit-btn {
+  margin-top: 10px;
+  padding: 15px;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+@media (max-width: 900px) {
+  .listing-wrapper {
+    flex-direction: column;
+  }
+  
+  .listing-info {
+    padding: 40px 30px;
+  }
+  
+  .listing-form-container {
+    padding: 40px 30px;
+  }
+  
+  .listing-form .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+}

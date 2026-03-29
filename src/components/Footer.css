@@ -1,0 +1,83 @@
+.footer {
+  background-color: var(--text-dark);
+  color: var(--bg-light);
+  padding: 60px 0 0 0;
+  margin-top: auto;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.logo-footer {
+  margin-bottom: 15px;
+}
+
+.logo-img-footer {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 8px; /* Slight roundness just in case */
+  background: white;   /* White background if the image has transparent parts but needs contrast */
+  padding: 5px;
+}
+
+.footer-desc {
+  margin-top: 15px;
+  opacity: 0.8;
+  line-height: 1.6;
+  max-width: 400px;
+}
+
+.footer h3 {
+  color: var(--primary-gold);
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-family: var(--font-heading);
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  opacity: 0.8;
+  transition: var(--transition);
+}
+
+.footer-links a:hover {
+  opacity: 1;
+  color: var(--primary-gold);
+  padding-left: 5px;
+}
+
+.footer-contact p {
+  margin-bottom: 12px;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
