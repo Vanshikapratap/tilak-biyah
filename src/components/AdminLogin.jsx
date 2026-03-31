@@ -25,35 +25,35 @@ const AdminLogin = () => {
       <div className="login-card glass">
         <div className="login-header">
           <h2>Admin Access</h2>
-          <p>Please enter your credentials to manage Tilak Byaah</p>
+          <p>Please enter your credentials to manage Tilak byah</p>
         </div>
-        
+
         {error && <div className="login-error">{error}</div>}
-        
+
         <form onSubmit={handleLogin} className="login-form">
           <div className="form-group">
             <label>User ID</label>
-            <input 
-              type="text" 
-              placeholder="Enter User ID" 
-              value={username} 
-              onChange={(e) => setUsername(e.target.value)} 
-              required 
+            <input
+              type="text"
+              placeholder="Enter User ID"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              required
             />
           </div>
           <div className="form-group">
             <label>Password</label>
-            <input 
-              type="password" 
-              placeholder="Enter Password" 
-              value={password} 
-              onChange={(e) => setPassword(e.target.value)} 
-              required 
+            <input
+              type="password"
+              placeholder="Enter Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
             />
           </div>
           <button type="submit" className="btn-primary full-width">Login</button>
         </form>
-        
+
         <div className="login-footer">
           <button onClick={() => navigate('/')} className="btn-back-link">Return to Home</button>
         </div>

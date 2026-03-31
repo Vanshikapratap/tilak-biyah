@@ -1,14 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import heroBg from '../assets/bg backdrp.png';
 import './Hero.css';
 
 const Hero = () => {
   return (
     <section id="home" className="hero">
-      <video
-        src="https://v1.pinimg.com/videos/iht/expMp4/ed/3f/7f/ed3f7fc7cdc835e5d5fbc07ba1f5310b_720w.mp4"
-        autoPlay loop muted playsInline
-        className="hero-video-bg"
+      <img
+        src={heroBg}
+        alt="Hero Background"
+        className="hero-bg-image"
       />
       <div className="hero-overlay"></div>
       <motion.div
@@ -24,9 +25,9 @@ const Hero = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            <span style={{ color: 'red' }}>Tilak Byaah</span> <br />
+            <span style={{ color: 'red' }}>Tilak byah</span> <br />
             <span style={{ fontSize: '1.6rem', fontWeight: 'normal', color: 'white', display: 'block', marginTop: '15px' }}>
-              Parampara bhi, Profession bhi
+              Parampara bhi, Professional bhi
             </span>
           </motion.h1>
           <motion.p

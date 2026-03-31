@@ -15,9 +15,9 @@ const Header = () => {
   return (
     <header className={`header ${scrolled ? 'scrolled glass' : ''}`}>
       <div className="container header-content">
-        <div className="logo cursor-pointer" onClick={() => window.scrollTo(0,0)} style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-          <img src="/logo.png" alt="Tilak Byaah Logo" className="logo-img" />
-          <span style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'red', fontFamily: 'var(--font-heading)' }}>Tilak Byaah</span>
+        <div className="logo cursor-pointer" onClick={() => window.scrollTo(0, 0)} style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+          <img src="/logo.jpg" alt="Tilak byah Logo" className="logo-img" />
+          <span style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'red', fontFamily: 'var(--font-heading)' }}>Tilak byah</span>
         </div>
         <nav className="nav-links">
           <a href="#home">Home</a>

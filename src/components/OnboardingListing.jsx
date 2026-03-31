@@ -19,13 +19,13 @@ const OnboardingListing = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     // Format the WhatsApp message for listing onboarding
-    const text = `Hello Tilak Byaah, I want to list my business!\n\nName: ${formData.fullName}\nBusiness Name: ${formData.businessName}\nType: ${formData.businessType}\nPhone: ${formData.phone}\nCity/Location: ${formData.city}`;
-    
+    const text = `Hello Tilak byah, I want to list my business!\n\nName: ${formData.fullName}\nBusiness Name: ${formData.businessName}\nType: ${formData.businessType}\nPhone: ${formData.phone}\nCity/Location: ${formData.city}`;
+
     const encodedText = encodeURIComponent(text);
     const whatsappNumber = "919065939009";
-    
+
     window.open(`https://wa.me/${whatsappNumber}?text=${encodedText}`, '_blank');
   };
 
@@ -36,9 +36,9 @@ const OnboardingListing = () => {
           <div className="listing-info">
             <h2 className="section-title">List Your Business</h2>
             <p className="section-subtitle text-left">
-              Join the largest network of premium Bihari wedding vendors. 
-              Fill out this quick onboarding form, and our team will get your 
-              business live on Tilak Byaah!
+              Join the largest network of premium Bihari wedding vendors.
+              Fill out this quick onboarding form, and our team will get your
+              business live on Tilak byah!
             </p>
             <ul className="perks-list">
               <li>✔️ Reach thousands of couples globally</li>

@@ -17,47 +17,47 @@ const Contact = ({ selectedGarden }) => {
 
   const handleWhatsAppSubmit = (e) => {
     e.preventDefault();
-    
-    let message = `Hello Tilak Byaah! I would like to inquire about wedding arrangements.\n\n`;
+
+    let message = `Hello Tilak byah! I would like to inquire about wedding arrangements.\n\n`;
     message += `*Name:* ${formData.name}\n`;
     message += `*Contact Number:* ${formData.number}\n`;
     message += `*Address/City:* ${formData.address}\n`;
     message += `*Event Name:* ${formData.eventName}\n`;
     message += `*Event Date:* ${formData.date}\n`;
     message += `*Estimated Budget:* ${formData.budget}\n`;
-    
+
     if (selectedGarden) {
       message += `*Interested Venue:* ${selectedGarden.name}\n`;
     }
 
     const encodedMessage = encodeURIComponent(message);
-    const phoneNumber = "919065939009"; 
-    
+    const phoneNumber = "919065939009";
+
     // Open WhatsApp
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
   };
 
-  const emailAddress = "hello@tilakbyaah.com";
+  const emailAddress = "hello@tilakbyah.com";
   const telUrl = `tel:+919065939009`;
 
   return (
     <section id="contact" className="contact-section">
       <div className="container flex-contact">
-        
+
         {/* Contact Form Details */}
         <div className="contact-card glass">
           <div className="contact-content">
-            <h2 className="section-title" style={{color: 'var(--text-light)'}}>Send an Inquiry</h2>
-            <p style={{color: 'var(--text-light)', opacity: 0.9, marginBottom: '30px'}}>
+            <h2 className="section-title" style={{ color: 'var(--text-light)' }}>Send an Inquiry</h2>
+            <p style={{ color: 'var(--text-light)', opacity: 0.9, marginBottom: '30px' }}>
               Fill out the form below and we will get back to you with the best marriage garden options in Bihar.
             </p>
-            
+
             <form onSubmit={handleWhatsAppSubmit} className="inquiry-form">
               <div className="form-group">
                 <label>Full Name</label>
                 <input type="text" name="name" required placeholder="Enter your name" value={formData.name} onChange={handleChange} />
               </div>
-              
+
               <div className="form-group">
                 <label>Contact Number</label>
                 <input type="tel" name="number" required placeholder="10-digit mobile number" value={formData.number} onChange={handleChange} />
@@ -105,7 +105,7 @@ const Contact = ({ selectedGarden }) => {
 
         {/* Alternative Contact Methods */}
         <div className="alternative-contact glass">
-          <h3 style={{color: 'var(--text-light)', marginBottom: '20px'}}>Or Reach Us Directly</h3>
+          <h3 style={{ color: 'var(--text-light)', marginBottom: '20px' }}>Or Reach Us Directly</h3>
           <div className="alt-methods">
             <a href={telUrl} className="contact-btn call alt-btn">
               <span className="icon">📞</span>
