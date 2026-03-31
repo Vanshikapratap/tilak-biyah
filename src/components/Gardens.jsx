@@ -7,11 +7,7 @@ const Gardens = ({ selectedGarden, setSelectedGarden }) => {
   const { gardens } = useData();
   const [filterCity, setFilterCity] = React.useState('All');
 
-  const districts = [
-    'All', 'Patna', 'Gaya', 'Muzaffarpur', 'Bhagalpur', 'Darbhanga', 
-    'Purnia', 'Ara', 'Begusarai', 'Chhapra', 'Katihar', 'Munger', 
-    'Saharsa', 'Samastipur', 'Motihari', 'Hajipur'
-  ];
+  const districts = ['All', 'Patna', 'Muzaffarpur','Chhapra','Hajipur'];
   const filteredGardens = filterCity === 'All' ? gardens : gardens.filter(g => g.location.includes(filterCity));
 
   return (

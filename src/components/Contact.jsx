@@ -37,7 +37,7 @@ const Contact = ({ selectedGarden }) => {
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
   };
 
-  const emailAddress = "hello@tilakbyah.com";
+  const emailAddress = "tilakbyah@gmail.com";
   const telUrl = `tel:+919065939009`;
 
   return (
